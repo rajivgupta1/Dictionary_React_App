@@ -1,13 +1,143 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato&family=Poppins:wght@200;300;400;600;700;800;900&family=Roboto:wght@500&family=Ubuntu:ital,wght@0,400;0,500;1,300&display=swap');
+
+
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  min-height: 100vh;
+  background-color: rebeccapurple;
 }
+
+.container{
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 15px 15px black;
+}
+
+.container h1{
+  font-size: 2rem;
+  text-align:center;
+  text-transform: capitalize;
+  color: black;
+}
+
+.container form{
+   margin-top: 1.5rem;
+}
+
+.container form .row{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container form .row .voices-icons{
+  background: white;
+  margin-top: -15px;
+  border: 1px solid #bbb;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: none;
+  margin-bottom: 10px;
+  text-align: right;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.container form .row .voices-icons .select-voices{
+  flex: 1;
+}
+
+.container form .row .voices-icons i{
+   cursor: pointer;
+   opacity: 0.5;
+   margin-left: 10px;
+}
+
+.container form .row .voices-icons i.speak{
+  color: rebeccapurple;
+}
+
+.container form textarea,
+.container form select{
+   width: 100%;
+   outline: none;
+   border: none;
+   border-radius: 5px;
+}
+
+.container form textarea {
+  border: 1px solid #bbb;
+  padding: 3px 5px;
+  margin-bottom: 12px;
+  resize: none;
+}
+
+.container form select{
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.container ul{
+  list-style:none;
+  margin-top: 5px;
+  font-size: 13px;
+  max-height: 250px;
+  overflow: scroll;
+}
+
+.container ul .word h2{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+
+}
+
+.container ul .word span{
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.container ul .contain{
+  margin-top: 7px;
+}
+.container ul .contain .details{
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-top: 10px;
+  padding: 5px 0;
+  padding-left: 10px;
+  border-radius: 5px;
+  border-left: 3px solid rebeccapurple;
+}
+
+.container ul .contain .details p{
+  opacity: 0.6;
+}
+
+.containerul ul .contain .synonyms span{
+   opacity: 0.6;
+   border-bottom: 1px dotted rebeccapurple;
+   cursor: pointer;
+}
+.containerul ul .contain .synonyms span:hover{
+   color: rebeccapurple;
+}
+
+::-webkit-scrollbar{
+  display: none;
+
+}
+
